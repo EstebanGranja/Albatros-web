@@ -1,87 +1,71 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import { usePathname } from "next/navigation"
 import { Menu, X, MessageCircle } from "lucide-react"
 import Image from "next/image"
+import Link from "next/link"
 
 const navItems = [
-  { label: "Inicio", href: "#inicio" },
-  { label: "Productos", href: "#productos" },
-  { label: "Contacto", href: "#contacto" },
+  { label: "Inicio", href: "/" },
+  { label: "Productos", href: "/productos" },
+  { label: "Contacto", href: "/contacto" },
 ]
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [activeSection, setActiveSection] = useState("inicio")
   const [isScrolled, setIsScrolled] = useState(false)
+  const pathname = usePathname()
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20)
-
-      const sections = ["inicio", "productos", "contacto"]
-      const scrollPosition = window.scrollY + 100
-
-      for (const section of sections) {
-        const element = document.getElementById(section)
-        if (element) {
-          const { offsetTop, offsetHeight } = element
-          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
-            setActiveSection(section)
-            break
-          }
-        }
-      }
     }
 
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
-  const handleNavClick = (href: string) => {
-    setIsMenuOpen(false)
-    const element = document.querySelector(href)
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
-    }
-  }
-
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white shadow-lg" : "bg-white/95 backdrop-blur-sm"
+        isScrolled 
+          ? "bg-white shadow-[0_4px_20px_rgba(0,0,0,0.15)]" 
+          : "bg-white/95 backdrop-blur-sm shadow-[0_4px_15px_rgba(0,0,0,0.08)]"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 md:h-20">
-          {/* Logo */}
-          <a href="#inicio" onClick={() => handleNavClick("#inicio")} className="flex items-center gap-2">
+        <div className="flex items-center justify-between h-20 md:h-24">
+          {/* Logo - Bigger to fill header height */}
+          <Link href="/" className="flex items-center gap-2">
             <Image
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo_albatros-qKK1LZOCWwUKMQHJ4q9yGLeE66j1vx.png"
               alt="Pinturería Albatros"
-              width={140}
-              height={50}
-              className="h-10 md:h-12 w-auto"
+              width={180}
+              height={65}
+              className="h-14 md:h-[4.5rem] w-auto"
+              style={{ height: 'auto', maxHeight: '72px' }}
+              priority
             />
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
-              <button
+              <Link
                 key={item.href}
-                onClick={() => handleNavClick(item.href)}
-                className={`relative text-sm font-semibold transition-colors duration-200 ${
-                  activeSection === item.href.slice(1)
+                href={item.href}
+                className={`relative text-sm font-bold transition-colors duration-200 ${
+                  pathname === item.href
                     ? "text-[var(--navy)]"
                     : "text-gray-600 hover:text-[var(--navy)]"
                 }`}
               >
                 {item.label}
-                {activeSection === item.href.slice(1) && (
+                {pathname === item.href && (
                   <span className="absolute -bottom-1 left-0 right-0 h-0.5 bg-[var(--golden)] rounded-full" />
                 )}
-              </button>
+              </Link>
             ))}
           </nav>
 
@@ -90,7 +74,7 @@ export default function Header() {
             href="https://wa.me/543547XXXXXX"
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden md:flex items-center gap-2 bg-[var(--green)] text-white px-4 py-2 rounded-full font-semibold text-sm hover:brightness-110 transition-all duration-200 shadow-md hover:shadow-lg"
+            className="hidden md:flex items-center gap-2 bg-[var(--green)] text-white px-5 py-2.5 rounded-full font-bold text-sm hover:brightness-110 transition-all duration-200 shadow-md hover:shadow-lg"
           >
             <MessageCircle className="w-4 h-4" />
             WhatsApp
@@ -113,25 +97,26 @@ export default function Header() {
           isMenuOpen ? "max-h-80 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <nav className="bg-white border-t border-gray-100 px-4 py-4 space-y-2">
+        <nav className="bg-white border-t border-gray-100 px-4 py-4 space-y-2 shadow-lg">
           {navItems.map((item) => (
-            <button
+            <Link
               key={item.href}
-              onClick={() => handleNavClick(item.href)}
-              className={`block w-full text-left px-4 py-3 rounded-lg font-semibold transition-colors ${
-                activeSection === item.href.slice(1)
+              href={item.href}
+              onClick={() => setIsMenuOpen(false)}
+              className={`block w-full text-left px-4 py-3 rounded-lg font-bold transition-colors ${
+                pathname === item.href
                   ? "bg-[var(--navy)] text-white"
                   : "text-gray-700 hover:bg-gray-100"
               }`}
             >
               {item.label}
-            </button>
+            </Link>
           ))}
           <a
             href="https://wa.me/543547XXXXXX"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center gap-2 bg-[var(--green)] text-white px-4 py-3 rounded-lg font-semibold mt-4"
+            className="flex items-center justify-center gap-2 bg-[var(--green)] text-white px-4 py-3 rounded-lg font-bold mt-4"
           >
             <MessageCircle className="w-5 h-5" />
             WhatsApp

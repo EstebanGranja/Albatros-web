@@ -1,19 +1,12 @@
 "use client"
 
 import Image from "next/image"
+import Link from "next/link"
 
 export default function Hero() {
-  const scrollTo = (id: string) => {
-    const element = document.getElementById(id)
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
-    }
-  }
-
   return (
     <section
-      id="inicio"
-      className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center pt-24 overflow-hidden"
     >
       {/* Background with paint effect */}
       <div className="absolute inset-0 bg-gradient-to-br from-[var(--navy)] via-[#1e4478] to-[var(--navy)]">
@@ -25,20 +18,24 @@ export default function Hero() {
       </div>
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        {/* Logo */}
-        <div className="mb-8 flex justify-center">
+        {/* Circular Logo */}
+        <div className="mb-10 flex justify-center">
           <div className="relative">
-            <div className="absolute inset-0 bg-white/10 rounded-full blur-xl transform scale-110" />
-            <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo_albatros-qKK1LZOCWwUKMQHJ4q9yGLeE66j1vx.png"
-              alt="Pinturería Albatros"
-              width={280}
-              height={100}
-              className="relative drop-shadow-2xl"
-              style={{ width: 'auto', height: 'auto', maxWidth: '288px' }}
-              loading="eager"
-              priority
-            />
+            {/* Glow effect behind */}
+            <div className="absolute inset-0 bg-white/20 rounded-full blur-2xl transform scale-125" />
+            {/* Circular container */}
+            <div className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-full bg-white shadow-2xl flex items-center justify-center p-6 border-4 border-[var(--golden)]">
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo_albatros-qKK1LZOCWwUKMQHJ4q9yGLeE66j1vx.png"
+                alt="Pinturería Albatros"
+                width={200}
+                height={72}
+                className="w-full h-auto object-contain"
+                style={{ width: '100%', height: 'auto' }}
+                loading="eager"
+                priority
+              />
+            </div>
           </div>
         </div>
 
@@ -54,18 +51,18 @@ export default function Hero() {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button
-            onClick={() => scrollTo("productos")}
-            className="px-8 py-4 bg-[var(--navy)] text-white font-bold rounded-full hover:bg-[#0f2544] transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 border-2 border-white/30"
+          <Link
+            href="/productos"
+            className="px-8 py-4 bg-[var(--golden)] text-[var(--navy)] font-bold rounded-full hover:brightness-110 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1"
           >
             Ver Productos
-          </button>
-          <button
-            onClick={() => scrollTo("contacto")}
-            className="px-8 py-4 bg-transparent border-2 border-[var(--golden)] text-[var(--golden)] font-bold rounded-full hover:bg-[var(--golden)] hover:text-[var(--navy)] transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1"
+          </Link>
+          <Link
+            href="/contacto"
+            className="px-8 py-4 bg-transparent border-2 border-white text-white font-bold rounded-full hover:bg-white hover:text-[var(--navy)] transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1"
           >
             Contactanos
-          </button>
+          </Link>
         </div>
 
         {/* Scroll indicator */}

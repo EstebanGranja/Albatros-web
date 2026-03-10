@@ -1,6 +1,5 @@
-"use client"
-
 import { MessageCircle } from "lucide-react"
+import Link from "next/link"
 
 const features = [
   {
@@ -26,13 +25,6 @@ const features = [
 ]
 
 export default function WhyChooseUs() {
-  const scrollTo = (id: string) => {
-    const element = document.getElementById(id)
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
-    }
-  }
-
   return (
     <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -93,12 +85,12 @@ export default function WhyChooseUs() {
               <MessageCircle className="w-5 h-5" />
               Escribinos por WhatsApp
             </a>
-            <button
-              onClick={() => scrollTo("contacto")}
-              className="inline-flex items-center justify-center gap-2 border-2 border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-[var(--dark-bg)] transition-all duration-200"
+            <Link
+              href="/contacto"
+              className="inline-flex items-center justify-center gap-2 border-2 border-white text-white px-6 py-3 rounded-full font-bold hover:bg-white hover:text-[var(--dark-bg)] transition-all duration-200"
             >
               Ver información de contacto
-            </button>
+            </Link>
           </div>
         </div>
       </div>
