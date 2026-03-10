@@ -5,7 +5,7 @@ import './globals.css'
 
 const nunito = Nunito({ 
   subsets: ["latin"],
-  variable: '--font-nunito',
+  variable: '--font-sans',
   weight: ['400', '500', '600', '700', '800']
 })
 
@@ -46,7 +46,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" className="scroll-smooth">
-      <body className={`${nunito.variable} font-sans antialiased`}>
+      <body className={`${nunito.className} antialiased`}>
         {children}
         <Analytics />
       </body>
