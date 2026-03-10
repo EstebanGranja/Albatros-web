@@ -7,11 +7,11 @@ export default function Footer() {
         <div className="flex flex-col items-center gap-4">
           {/* Logo */}
           <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo_albatros-qKK1LZOCWwUKMQHJ4q9yGLeE66j1vx.png"
+            src="/logo_albatros.png"
             alt="Pinturería Albatros"
-            width={120}
-            height={40}
-            className="h-10 w-auto brightness-0 invert opacity-80"
+            width={64}
+            height={64}
+            className="w-16 h-16 rounded-full object-cover border-2 border-white shadow-lg"
           />
           
           {/* Copyright */}
