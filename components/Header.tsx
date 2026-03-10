@@ -72,7 +72,7 @@ export default function Header() {
 
           {/* WhatsApp Button (Desktop) */}
           <a
-            href="https://wa.me/543547XXXXXX"
+            href="https://wa.me/543516570436?text=Hola!%20tengo%20una%20consulta"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden md:flex items-center gap-2 bg-[var(--green)] text-white px-5 py-2.5 rounded-xl font-bold text-sm hover:brightness-110 transition-all duration-200 shadow-md hover:shadow-lg"
@@ -114,7 +114,7 @@ export default function Header() {
             </Link>
           ))}
           <a
-            href="https://wa.me/543547XXXXXX"
+            href="https://wa.me/543516570436?text=Hola!%20tengo%20una%20consulta"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-2 bg-[var(--green)] text-white px-4 py-3 rounded-xl font-bold mt-4"

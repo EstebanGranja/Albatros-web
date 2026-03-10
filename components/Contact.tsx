@@ -13,18 +13,18 @@ const contactCards = [
   },
   {
     icon: Phone,
-    title: "Teléfono",
-    content: "+54 3547 XXXXXX",
+    title: "Teléfono / WhatsApp",
+    content: "351 657-0436",
     subContent: "Llamanos o escribinos por WhatsApp",
-    link: "tel:+543547XXXXXX",
+    link: "tel:+543516570436",
     color: "bg-cyan-50 text-cyan-500",
   },
   {
     icon: Mail,
     title: "Email",
-    content: "albatros@pintureria.com.ar",
+    content: "pinturerialbatros@hotmail.com.ar",
     subContent: "Respondemos en menos de 24 horas",
-    link: "mailto:albatros@pintureria.com.ar",
+    link: "mailto:pinturerialbatros@hotmail.com.ar",
     color: "bg-teal-50 text-teal-500",
   },
   {
@@ -70,7 +70,7 @@ export default function Contact() {
         {/* WhatsApp CTA */}
         <div className="flex justify-center mb-14">
           <a
-            href="https://wa.me/543547XXXXXX"
+            href="https://wa.me/543516570436?text=Hola!%20tengo%20una%20consulta"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-[var(--green)] text-white px-8 py-4 rounded-full font-bold text-lg hover:brightness-110 transition-all duration-200 shadow-lg hover:shadow-xl hover:-translate-y-1"
