@@ -34,7 +34,9 @@ export default function Hero() {
               alt="Pinturería Albatros"
               width={280}
               height={100}
-              className="relative w-48 sm:w-64 md:w-72 h-auto drop-shadow-2xl"
+              className="relative drop-shadow-2xl"
+              style={{ width: 'auto', height: 'auto', maxWidth: '288px' }}
+              loading="eager"
               priority
             />
           </div>
