@@ -8,3 +8,38 @@ node_modules/
 .next/
 .env*.local
 .DS_Store
+# Build outputs
+out/
+dist/
+build/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Local env files
+.env
+.env.*
+
+# IDE/editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Misc
+coverage/
+*.log
+*.tmp
+*.bak
+*.local
+
+next-env.d.ts
+package-lock.json
