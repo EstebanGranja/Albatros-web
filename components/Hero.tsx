@@ -2,6 +2,7 @@
 
 import Image from "next/image"
 import Link from "next/link"
+import { ArrowRight } from "lucide-react"
 
 export default function Hero() {
   return (
@@ -38,16 +39,18 @@ export default function Hero() {
 
         {/* Subtitle */}
         <p className="text-lg sm:text-xl md:text-2xl text-white/90 mb-10 max-w-2xl mx-auto leading-relaxed text-pretty">
-          Tu pinturería de confianza en Alta Gracia. Calidad, color y asesoramiento para cada proyecto.
+          Calidad, color y asesoramiento para cada proyecto. 
+          Envíos a domicilio sin cargo
         </p>
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             href="/productos"
-            className="px-8 py-4 bg-[var(--golden)] text-[var(--navy)] font-bold rounded-xl hover:brightness-110 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1"
+            className="px-8 py-4 bg-[var(--golden)] text-[var(--navy)] font-bold rounded-xl hover:brightness-110 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 flex items-center gap-2 justify-center"
           >
             Ver Productos
+            <ArrowRight className="w-5 h-5 text-black" />
           </Link>
           <Link
             href="/contacto"

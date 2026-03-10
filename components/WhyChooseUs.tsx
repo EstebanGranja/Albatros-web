@@ -1,4 +1,4 @@
-import { MessageCircle } from "lucide-react"
+import Image from "next/image"
 import Link from "next/link"
 
 const features = [
@@ -82,7 +82,7 @@ export default function WhyChooseUs() {
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-[var(--green)] text-white px-6 py-3 rounded-xl font-semibold hover:brightness-110 transition-all duration-200 shadow-lg"
             >
-              <MessageCircle className="w-5 h-5" />
+              <Image src="/images/whatsapp.png" alt="WhatsApp" width={20} height={20} className="w-5 h-5" />
               Escribinos por WhatsApp
             </a>
             <Link

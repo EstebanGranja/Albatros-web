@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from "react"
 import { usePathname } from "next/navigation"
-import { Menu, X, MessageCircle } from "lucide-react"
+import { Menu, X } from "lucide-react"
+import WhatsAppIcon from "next/image"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -76,7 +77,7 @@ export default function Header() {
             rel="noopener noreferrer"
             className="hidden md:flex items-center gap-2 bg-[var(--green)] text-white px-5 py-2.5 rounded-xl font-bold text-sm hover:brightness-110 transition-all duration-200 shadow-md hover:shadow-lg"
           >
-            <MessageCircle className="w-4 h-4" />
+            <Image src="/images/whatsapp.png" alt="WhatsApp" width={18} height={18} className="w-4 h-4" />
             WhatsApp
           </a>
 
@@ -118,7 +119,7 @@ export default function Header() {
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-2 bg-[var(--green)] text-white px-4 py-3 rounded-xl font-bold mt-4"
           >
-            <MessageCircle className="w-5 h-5" />
+            <Image src="/images/whatsapp.png" alt="WhatsApp" width={20} height={20} className="w-5 h-5" />
             WhatsApp
           </a>
         </nav>
