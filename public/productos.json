@@ -1,0 +1,100 @@
+[
+  {
+    "id": 1,
+    "categoria": "Látex",
+    "nombre": "Látex Interior Premium",
+    "descripcion": "Pintura látex de alta cobertura para interiores. Secado rápido y lavable. Ideal para paredes y cielorrasos.",
+    "imagen": "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=300&h=300&fit=crop"
+  },
+  {
+    "id": 2,
+    "categoria": "Látex",
+    "nombre": "Látex Exterior Acrílico",
+    "descripcion": "Pintura látex acrílico para exteriores. Resistente a la intemperie y rayos UV. Excelente durabilidad.",
+    "imagen": "https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=300&h=300&fit=crop"
+  },
+  {
+    "id": 3,
+    "categoria": "Látex",
+    "nombre": "Látex Satinado",
+    "descripcion": "Acabado satinado elegante para ambientes modernos. Fácil limpieza y resistente al frote.",
+    "imagen": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&h=300&fit=crop"
+  },
+  {
+    "id": 4,
+    "categoria": "Esmaltes",
+    "nombre": "Esmalte Sintético Brillante",
+    "descripcion": "Esmalte de alto brillo para maderas y metales. Secado rápido y excelente terminación.",
+    "imagen": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=300&h=300&fit=crop"
+  },
+  {
+    "id": 5,
+    "categoria": "Esmaltes",
+    "nombre": "Esmalte al Agua",
+    "descripcion": "Esmalte ecológico al agua. Sin olor, bajo VOC. Ideal para interiores y muebles.",
+    "imagen": "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=300&h=300&fit=crop"
+  },
+  {
+    "id": 6,
+    "categoria": "Esmaltes",
+    "nombre": "Convertidor de Óxido",
+    "descripcion": "Convierte el óxido en superficie pintable. Protege metales contra la corrosión.",
+    "imagen": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=300&h=300&fit=crop"
+  },
+  {
+    "id": 7,
+    "categoria": "Impermeabilizantes",
+    "nombre": "Membrana Líquida",
+    "descripcion": "Impermeabilizante elastomérico para techos y terrazas. Resiste movimientos estructurales.",
+    "imagen": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=300&h=300&fit=crop"
+  },
+  {
+    "id": 8,
+    "categoria": "Impermeabilizantes",
+    "nombre": "Hidrorrepelente para Muros",
+    "descripcion": "Protege paredes exteriores de la humedad. Invisible, no altera el aspecto de la superficie.",
+    "imagen": "https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?w=300&h=300&fit=crop"
+  },
+  {
+    "id": 9,
+    "categoria": "Impermeabilizantes",
+    "nombre": "Sellador para Fisuras",
+    "descripcion": "Sella grietas y fisuras en paredes y techos. Elástico y resistente al agua.",
+    "imagen": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=300&h=300&fit=crop"
+  },
+  {
+    "id": 10,
+    "categoria": "Aditivos",
+    "nombre": "Enduido Plástico",
+    "descripcion": "Masilla niveladora para preparar superficies. Fácil lijado y excelente adherencia.",
+    "imagen": "https://images.unsplash.com/photo-1572981779307-38b8cabb2407?w=300&h=300&fit=crop"
+  },
+  {
+    "id": 11,
+    "categoria": "Aditivos",
+    "nombre": "Fijador Sellador",
+    "descripcion": "Sella y fija superficies porosas antes de pintar. Mejora la adherencia de la pintura.",
+    "imagen": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&h=300&fit=crop"
+  },
+  {
+    "id": 12,
+    "categoria": "Herramientas",
+    "nombre": "Rodillo Antigota Premium",
+    "descripcion": "Rodillo profesional con sistema antigota. Acabado uniforme sin salpicaduras.",
+    "imagen": "https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=300&h=300&fit=crop"
+  },
+  {
+    "id": 13,
+    "categoria": "Herramientas",
+    "nombre": "Set de Pinceles Profesional",
+    "descripcion": "Juego de 5 pinceles de diferentes tamaños. Cerdas sintéticas de alta calidad.",
+    "imagen": "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=300&h=300&fit=crop"
+  },
+  {
+    "id": 14,
+    "categoria": "Herramientas",
+    "nombre": "Bandeja para Pintura",
+    "descripcion": "Bandeja plástica resistente con rejilla escurridora. Compatible con rodillos estándar.",
+    "imagen": "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=300&h=300&fit=crop"
+  }
+]
