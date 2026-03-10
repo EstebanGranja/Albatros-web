@@ -2,99 +2,113 @@
   {
     "id": 1,
     "categoria": "Látex",
-    "nombre": "Látex Interior Premium",
-    "descripcion": "Pintura látex de alta cobertura para interiores. Secado rápido y lavable. Ideal para paredes y cielorrasos.",
-    "imagen": "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=300&h=300&fit=crop"
+    "nombre": "Látex Interior/Exterior",
+    "descripcion": "Pintura látex versátil para uso en interiores y exteriores. Alta cobertura, secado rápido y fácil limpieza. Ideal para paredes y cielorrasos.",
+    "imagen": "/images/productos/latex_int-ext.jpg"
   },
   {
     "id": 2,
     "categoria": "Látex",
-    "nombre": "Látex Exterior Acrílico",
-    "descripcion": "Pintura látex acrílico para exteriores. Resistente a la intemperie y rayos UV. Excelente durabilidad.",
-    "imagen": "https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=300&h=300&fit=crop"
+    "nombre": "Látex para Frentes",
+    "descripcion": "Pintura látex acrílico de alta resistencia para fachadas exteriores. Protege contra la intemperie, rayos UV y lluvia, con excelente durabilidad.",
+    "imagen": "/images/productos/latex_frentes.jpg"
   },
   {
     "id": 3,
     "categoria": "Látex",
-    "nombre": "Látex Satinado",
-    "descripcion": "Acabado satinado elegante para ambientes modernos. Fácil limpieza y resistente al frote.",
-    "imagen": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&h=300&fit=crop"
+    "nombre": "Látex Antihongos",
+    "descripcion": "Pintura látex con agentes fungicidas que previenen el crecimiento de hongos y humedad. Ideal para baños, cocinas y ambientes húmedos.",
+    "imagen": "/images/productos/latex_antihongos.jpg"
   },
   {
     "id": 4,
     "categoria": "Esmaltes",
-    "nombre": "Esmalte Sintético Brillante",
-    "descripcion": "Esmalte de alto brillo para maderas y metales. Secado rápido y excelente terminación.",
-    "imagen": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=300&h=300&fit=crop"
+    "nombre": "Esmalte Sintético",
+    "descripcion": "Esmalte sintético de alto brillo para maderas y metales. Excelente terminación y durabilidad ante la intemperie.",
+    "imagen": "/images/productos/esmalte_sintetico.jpg"
   },
   {
     "id": 5,
     "categoria": "Esmaltes",
-    "nombre": "Esmalte al Agua",
-    "descripcion": "Esmalte ecológico al agua. Sin olor, bajo VOC. Ideal para interiores y muebles.",
-    "imagen": "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=300&h=300&fit=crop"
+    "nombre": "Esmalte Sintético 3 en 1",
+    "descripcion": "Esmalte sintético multifunción: imprimante, convertidor de óxido y esmalte en un solo producto. Protección total para superficies metálicas.",
+    "imagen": "/images/productos/esmalte_sintetico_3en1.jpg"
   },
   {
     "id": 6,
     "categoria": "Esmaltes",
-    "nombre": "Convertidor de Óxido",
-    "descripcion": "Convierte el óxido en superficie pintable. Protege metales contra la corrosión.",
-    "imagen": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=300&h=300&fit=crop"
+    "nombre": "Esmalte al Agua",
+    "descripcion": "Esmalte ecológico al agua, sin olor y bajo en VOC. Fácil aplicación y limpieza. Ideal para interiores y muebles.",
+    "imagen": "/images/productos/esmaltes_agua.jpg"
   },
   {
     "id": 7,
     "categoria": "Impermeabilizantes",
-    "nombre": "Membrana Líquida",
-    "descripcion": "Impermeabilizante elastomérico para techos y terrazas. Resiste movimientos estructurales.",
-    "imagen": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=300&h=300&fit=crop"
+    "nombre": "Impermeabilizante para Techos",
+    "descripcion": "Membrana líquida impermeabilizante para techos y terrazas. Alta resistencia a los rayos UV y condiciones climáticas extremas.",
+    "imagen": "/images/productos/imperm_techos.jpg"
   },
   {
     "id": 8,
     "categoria": "Impermeabilizantes",
-    "nombre": "Hidrorrepelente para Muros",
-    "descripcion": "Protege paredes exteriores de la humedad. Invisible, no altera el aspecto de la superficie.",
-    "imagen": "https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?w=300&h=300&fit=crop"
+    "nombre": "Impermeabilizante Fibrado",
+    "descripcion": "Impermeabilizante con fibras incorporadas para mayor elasticidad y resistencia. Ideal para techos con fisuras y movimientos estructurales.",
+    "imagen": "/images/productos/imperm_fibrado.jpg"
   },
   {
     "id": 9,
     "categoria": "Impermeabilizantes",
-    "nombre": "Sellador para Fisuras",
-    "descripcion": "Sella grietas y fisuras en paredes y techos. Elástico y resistente al agua.",
-    "imagen": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=300&h=300&fit=crop"
+    "nombre": "Impermeabilizante para Frentes",
+    "descripcion": "Impermeabilizante específico para fachadas y frentes. Protege contra la humedad sin alterar la estética de la superficie.",
+    "imagen": "/images/productos/imperm_frentes.jpg"
   },
   {
     "id": 10,
-    "categoria": "Aditivos",
-    "nombre": "Enduido Plástico",
-    "descripcion": "Masilla niveladora para preparar superficies. Fácil lijado y excelente adherencia.",
-    "imagen": "https://images.unsplash.com/photo-1572981779307-38b8cabb2407?w=300&h=300&fit=crop"
+    "categoria": "Impermeabilizantes",
+    "nombre": "Impermeabilizante para Exteriores",
+    "descripcion": "Protege superficies exteriores de la humedad y la lluvia. Invisible, no altera el aspecto original de la superficie.",
+    "imagen": "/images/productos/imperm_exteriores.jpg"
   },
   {
     "id": 11,
-    "categoria": "Aditivos",
-    "nombre": "Fijador Sellador",
-    "descripcion": "Sella y fija superficies porosas antes de pintar. Mejora la adherencia de la pintura.",
-    "imagen": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&h=300&fit=crop"
+    "categoria": "Piscinas",
+    "nombre": "Pintura para Piletas de Material",
+    "descripcion": "Pintura para piscinas de hormigón y material. Alta adherencia, resistente al agua y a los productos de tratamiento químico.",
+    "imagen": "/images/productos/piletas_material.jpg"
   },
   {
     "id": 12,
-    "categoria": "Herramientas",
-    "nombre": "Rodillo Antigota Premium",
-    "descripcion": "Rodillo profesional con sistema antigota. Acabado uniforme sin salpicaduras.",
-    "imagen": "https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=300&h=300&fit=crop"
+    "categoria": "Piscinas",
+    "nombre": "Pintura para Piletas de Fibra de Vidrio",
+    "descripcion": "Pintura específica para piscinas de fibra de vidrio. Resistente al cloro y productos químicos, con acabado liso y duradero.",
+    "imagen": "/images/productos/piletas_fibra_vidrio.jpg"
   },
   {
     "id": 13,
-    "categoria": "Herramientas",
-    "nombre": "Set de Pinceles Profesional",
-    "descripcion": "Juego de 5 pinceles de diferentes tamaños. Cerdas sintéticas de alta calidad.",
-    "imagen": "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=300&h=300&fit=crop"
+    "categoria": "Piscinas",
+    "nombre": "Pintura para Piletas Máxima Resistencia",
+    "descripcion": "Pintura de máxima resistencia para piscinas. Formulación especial que soporta condiciones extremas de uso y tratamiento químico intensivo.",
+    "imagen": "/images/productos/piletas_max_resistencia.jpg"
   },
   {
     "id": 14,
     "categoria": "Herramientas",
-    "nombre": "Bandeja para Pintura",
-    "descripcion": "Bandeja plástica resistente con rejilla escurridora. Compatible con rodillos estándar.",
-    "imagen": "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=300&h=300&fit=crop"
+    "nombre": "Pistolas para Pintar",
+    "descripcion": "Pistolas pulverizadoras profesionales para una aplicación rápida y uniforme. Ideales para grandes superficies y acabados de alta calidad.",
+    "imagen": "/images/productos/herramientas_pistolas-pintar.jpg"
+  },
+  {
+    "id": 15,
+    "categoria": "Herramientas",
+    "nombre": "Máscaras de Protección",
+    "descripcion": "Máscaras de protección para trabajos de pintura. Filtra vapores y partículas, garantizando seguridad durante la aplicación.",
+    "imagen": "/images/productos/herramientas_mascaras.jpg"
+  },
+  {
+    "id": 16,
+    "categoria": "Herramientas",
+    "nombre": "Sellador para Piscinas",
+    "descripcion": "Sellador especializado para piscinas. Protege y sella las superficies de piletas frente al agua y los productos químicos de tratamiento.",
+    "imagen": "/images/productos/herramientas_sellador-piscinas.jpg"
   }
 ]
