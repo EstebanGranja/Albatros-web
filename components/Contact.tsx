@@ -59,7 +59,7 @@ export default function Contact() {
             href="https://wa.me/543547XXXXXX"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 bg-[var(--green)] text-white px-8 py-4 rounded-full font-bold text-lg hover:brightness-110 transition-all duration-200 shadow-lg hover:shadow-xl hover:-translate-y-1"
+            className="inline-flex items-center gap-3 bg-[var(--green)] text-white px-8 py-4 rounded-xl font-bold text-lg hover:brightness-110 transition-all duration-200 shadow-lg hover:shadow-xl hover:-translate-y-1"
           >
             <MessageCircle className="w-6 h-6" />
             Escribinos por WhatsApp

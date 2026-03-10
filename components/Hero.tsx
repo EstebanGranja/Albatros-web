@@ -18,31 +18,23 @@ export default function Hero() {
       </div>
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        {/* Circular Logo */}
-        <div className="mb-10 flex justify-center">
-          <div className="relative">
-            {/* Glow effect behind */}
-            <div className="absolute inset-0 bg-white/20 rounded-full blur-2xl transform scale-125" />
-            {/* Circular container */}
-            <div className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-full bg-white shadow-2xl flex items-center justify-center p-6 border-4 border-[var(--golden)]">
-              <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo_albatros-qKK1LZOCWwUKMQHJ4q9yGLeE66j1vx.png"
-                alt="Pinturería Albatros"
-                width={200}
-                height={72}
-                className="w-full h-auto object-contain"
-                style={{ width: '100%', height: 'auto' }}
-                loading="eager"
-                priority
-              />
-            </div>
+        {/* Title with birds decoration */}
+        <div className="relative inline-block mb-6">
+          <h1 className="text-5xl sm:text-5xl md:text-6xl font-bold text-white tracking-normal" style={{ fontFamily: 'var(--font-montserrat), sans-serif' }}>
+            Pinturería Albatros
+          </h1>
+          {/* Birds image - top right of title */}
+          <div className="absolute -top-10 right-2 sm:-top-20 sm:-right-14">
+            <Image
+              src="/aves.png"
+              alt="Aves decorativas"
+              width={80}
+              height={60}
+              className="w-12 h-auto sm:w-20 opacity-90"
+              priority
+            />
           </div>
         </div>
-
-        {/* Title */}
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white mb-6 text-balance">
-          Pinturería Albatros
-        </h1>
 
         {/* Subtitle */}
         <p className="text-lg sm:text-xl md:text-2xl text-white/90 mb-10 max-w-2xl mx-auto leading-relaxed text-pretty">
@@ -53,24 +45,18 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             href="/productos"
-            className="px-8 py-4 bg-[var(--golden)] text-[var(--navy)] font-bold rounded-full hover:brightness-110 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1"
+            className="px-8 py-4 bg-[var(--golden)] text-[var(--navy)] font-bold rounded-xl hover:brightness-110 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1"
           >
             Ver Productos
           </Link>
           <Link
             href="/contacto"
-            className="px-8 py-4 bg-transparent border-2 border-white text-white font-bold rounded-full hover:bg-white hover:text-[var(--navy)] transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1"
+            className="px-8 py-4 bg-transparent border-2 border-white text-white font-bold rounded-xl hover:bg-white hover:text-[var(--navy)] transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1"
           >
             Contactanos
           </Link>
         </div>
 
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center pt-2">
-            <div className="w-1.5 h-3 bg-white/70 rounded-full animate-pulse" />
-          </div>
-        </div>
       </div>
     </section>
   )

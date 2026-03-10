@@ -16,7 +16,7 @@ export default function Footer() {
           
           {/* Copyright */}
           <p className="text-white/70 text-sm text-center">
-            © {new Date().getFullYear()} Pinturería Albatros — Alta Gracia, Córdoba
+            © {new Date().getFullYear()} Pinturería Albatros — Av. del Libertador 1032, Alta Gracia, Córdoba
           </p>
         </div>
       </div>

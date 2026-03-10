@@ -1,11 +1,17 @@
 import type { Metadata, Viewport } from 'next'
-import { Nunito } from 'next/font/google'
+import { Nunito, Montserrat } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
 const nunito = Nunito({ 
   subsets: ["latin"],
   variable: '--font-nunito',
+  weight: ['400', '500', '600', '700', '800']
+})
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  variable: '--font-montserrat',
   weight: ['400', '500', '600', '700', '800']
 })
 
@@ -46,7 +52,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" className="scroll-smooth">
-      <body className={`${nunito.variable} font-sans antialiased`}>
+      <body className={`${nunito.variable} ${montserrat.variable} font-sans antialiased`}>
         {children}
         <Analytics />
       </body>

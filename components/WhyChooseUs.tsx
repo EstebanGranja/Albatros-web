@@ -5,22 +5,22 @@ const features = [
   {
     title: "Pinturas de Calidad",
     description: "Las mejores marcas del mercado para resultados profesionales",
-    image: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=600&h=400&fit=crop",
+    image: "/images/pinturas.jpeg",
   },
   {
     title: "Impermeabilizantes",
     description: "Protección duradera para techos, terrazas y muros",
-    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&h=400&fit=crop",
+    image: "/images/impermeabilizantes.jpeg",
   },
   {
     title: "Herramientas y Accesorios",
     description: "Todo lo que necesitás para tu proyecto de pintura",
-    image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&h=400&fit=crop",
+    image: "/images/herramientas.jpeg",
   },
   {
     title: "Asesoramiento Personalizado",
     description: "Te ayudamos a elegir los productos ideales para tu obra",
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
+    image: "/images/asesoramiento.jpeg",
   },
 ]
 
@@ -80,14 +80,14 @@ export default function WhyChooseUs() {
               href="https://wa.me/543547XXXXXX"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 bg-[var(--green)] text-white px-6 py-3 rounded-full font-semibold hover:brightness-110 transition-all duration-200 shadow-lg"
+              className="inline-flex items-center justify-center gap-2 bg-[var(--green)] text-white px-6 py-3 rounded-xl font-semibold hover:brightness-110 transition-all duration-200 shadow-lg"
             >
               <MessageCircle className="w-5 h-5" />
               Escribinos por WhatsApp
             </a>
             <Link
               href="/contacto"
-              className="inline-flex items-center justify-center gap-2 border-2 border-white text-white px-6 py-3 rounded-full font-bold hover:bg-white hover:text-[var(--dark-bg)] transition-all duration-200"
+              className="inline-flex items-center justify-center gap-2 border-2 border-white text-white px-6 py-3 rounded-xl font-bold hover:bg-white hover:text-[var(--dark-bg)] transition-all duration-200"
             >
               Ver información de contacto
             </Link>
