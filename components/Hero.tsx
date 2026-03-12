@@ -40,7 +40,7 @@ export default function Hero() {
         {/* Subtitle */}
         <p className="text-lg sm:text-xl md:text-2xl text-white/90 mb-10 max-w-2xl mx-auto leading-relaxed text-pretty">
           Calidad, color y asesoramiento para cada proyecto. 
-          Envíos a domicilio sin cargo
+          Envíos a domicilio sin cargo. Nos encontramos en <a href="https://www.google.com/maps?q=Av.+del+Libertador+1032" target="_blank" rel="noopener noreferrer"><b>Av. del Libertador 1032</b></a>
         </p>
 
         {/* CTA Buttons */}

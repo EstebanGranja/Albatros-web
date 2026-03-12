@@ -132,7 +132,7 @@ export default function Products() {
                 <button
                   key={category}
                   onClick={() => handleCategoryChange(category)}
-                  className={`px-5 py-2.5 rounded-full font-semibold text-sm transition-all duration-300 whitespace-nowrap ${
+                  className={`px-5 py-2.5 rounded-full font-semibold text-sm transition-all duration-300 whitespace-nowrap cursor-pointer ${
                     selectedCategory === category
                       ? "bg-[var(--navy)] text-white shadow-lg"
                       : "bg-gray-100 text-gray-700 hover:bg-gray-200"
@@ -170,17 +170,17 @@ export default function Products() {
                       <div
                         key={product.id}
                         onClick={() => openModal(product)}
-                        className="group bg-white rounded-2xl p-5 shadow-md hover:shadow-xl cursor-pointer transition-all duration-300 hover:-translate-y-2 border border-gray-100"
+                        className="group bg-white rounded-2xl p-5 shadow-md hover:shadow-xl cursor-pointer transition-all duration-300 hover:-translate-y-2 border border-gray-100 cursor-pointer"
                       >
                         <div className="flex items-center gap-4">
                           {/* Circular Image */}
-                          <div className="relative w-28 h-28 sm:w-32 sm:h-32 flex-shrink-0">
+                          <div className="relative w-28 h-28 sm:w-32 sm:h-32 flex-shrink-0 overflow-hidden rounded-full">
                             <div className="absolute inset-0 rounded-full bg-gradient-to-br from-[var(--navy)]/10 to-[var(--golden)]/10" />
                             <Image
                               src={product.imagen}
                               alt={product.nombre}
                               fill
-                              className="rounded-full object-cover border-4 border-white shadow-md"
+                              className="rounded-full object-cover border-4 border-white shadow-md group-hover:scale-110 transition-transform duration-300"
                             />
                           </div>
 
@@ -249,7 +249,7 @@ export default function Products() {
               <div className="flex justify-end">
                 <button
                   onClick={closeModal}
-                  className="px-6 py-3 bg-[var(--navy)] text-white rounded-xl font-semibold hover:brightness-110 transition-all"
+                  className="px-6 py-3 bg-[var(--navy)] text-white rounded-xl font-semibold hover:brightness-110 transition-all cursor-pointer"
                 >
                   Cerrar
                 </button>

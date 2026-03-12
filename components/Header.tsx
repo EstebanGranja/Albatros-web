@@ -52,21 +52,30 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
-            {navItems.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className={`relative text-sm font-bold transition-colors duration-200 ${
-                  pathname === item.href
-                    ? "text-[var(--navy)]"
-                    : "text-gray-600 hover:text-[var(--navy)]"
-                }`}
-              >
-                {item.label}
-                {pathname === item.href && (
-                  <span className="absolute -bottom-1 left-0 right-0 h-0.5 bg-[var(--golden)] rounded-full" />
+            {navItems.map((item, idx) => (
+              <>
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className={`group relative text-base font-bold transition-all duration-200 ${
+                    pathname === item.href
+                      ? "text-[var(--navy)]"
+                      : "text-gray-600 hover:text-[var(--navy)]"
+                  }`}
+                  style={{ padding: '0 0.25rem' }}
+                >
+                  {item.label}
+                  {pathname === item.href && (
+                    <span className="absolute -bottom-1.5 left-0 right-0 h-0.75 bg-[var(--golden)] rounded-full" />
+                  )}
+                  {pathname !== item.href && (
+                    <span className="absolute -bottom-1.5 left-0 right-0 h-0.75 bg-[var(--golden)]/30 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
+                  )}
+                </Link>
+                {idx < navItems.length - 1 && (
+                  <span className="text-base font-bold text-gray-400 select-none">|</span>
                 )}
-              </Link>
+              </>
             ))}
           </nav>
 
@@ -104,13 +113,17 @@ export default function Header() {
               key={item.href}
               href={item.href}
               onClick={() => setIsMenuOpen(false)}
-              className={`block w-full text-left px-4 py-3 rounded-lg font-bold transition-colors ${
+              className={`relative block w-fit px-4 py-3 font-bold text-base transition-colors ${
                 pathname === item.href
-                  ? "bg-[var(--navy)] text-white"
-                  : "text-gray-700 hover:bg-gray-100"
+                  ? "text-[var(--navy)]"
+                  : "text-gray-700 hover:text-[var(--navy)]"
               }`}
+              style={{ paddingBottom: pathname === item.href ? '0.75rem' : '0.75rem' }}
             >
               {item.label}
+              {pathname === item.href && (
+                <span className="absolute bottom-0 left-4 right-4 h-1 bg-[var(--golden)] rounded-full" />
+              )}
             </Link>
           ))}
           <a
