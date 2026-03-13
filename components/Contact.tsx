@@ -22,9 +22,9 @@ const contactCards = [
   {
     icon: Mail,
     title: "Email",
-    content: "pinturerialbatros@hotmail.com.ar",
+    content: "pinturerialbatros@gmail.com",
     subContent: "Respondemos en menos de 24 horas",
-    link: "mailto:pinturerialbatros@hotmail.com.ar",
+    link: "mailto:pinturerialbatros@gmail.com",
     color: "bg-teal-50 text-teal-500",
   },
   {

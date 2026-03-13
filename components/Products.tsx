@@ -246,10 +246,19 @@ export default function Products() {
                 {selectedProduct.descripcion}
               </p>
 
-              <div className="flex justify-end">
+              <div className="flex justify-end gap-3">
+                <a
+                  href={`https://wa.me/543516570436?text=Hola!%20tengo%20una%20consulta%20sobre%20${encodeURIComponent(selectedProduct.nombre)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-[var(--green)] text-white rounded-lg font-semibold hover:brightness-110 transition-all cursor-pointer"
+                >
+                  <Image src="/images/whatsapp.png" alt="WhatsApp" width={20} height={20} className="w-5 h-5" />
+                  Consultar
+                </a>
                 <button
                   onClick={closeModal}
-                  className="px-6 py-3 bg-[var(--navy)] text-white rounded-xl font-semibold hover:brightness-110 transition-all cursor-pointer"
+                  className="px-6 py-3 bg-[var(--navy)] text-white rounded-lg font-semibold hover:brightness-110 transition-all cursor-pointer"
                 >
                   Cerrar
                 </button>

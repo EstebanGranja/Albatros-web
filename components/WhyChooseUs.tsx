@@ -77,7 +77,7 @@ export default function WhyChooseUs() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://wa.me/543547XXXXXX"
+              href="https://wa.me/543516570436?text=Hola!%20tengo%20una%20consulta"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-[var(--green)] text-white px-6 py-3 rounded-xl font-semibold hover:brightness-110 transition-all duration-200 shadow-lg"
